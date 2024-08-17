@@ -82,6 +82,7 @@ section.Show {
     display: flex;
     width: 50%;
     height: 300px;
+    justify-content: space-between;
 }
 
 
