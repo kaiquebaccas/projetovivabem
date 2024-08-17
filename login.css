@@ -1,0 +1,35 @@
+.log{
+    margin: 3px;
+    width: min-content;
+    height: min-content;
+    border-radius: 25px;
+}
+.login{
+    margin: 0 auto;
+    width: min-content;
+    height: min-content;
+    background-color: #c0c2c5;
+    padding: 30px;
+}
+.login h1{
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+}
+.log form{
+    width: 50%;
+    height: 50%;
+}
+.log input{
+    width: 400px;
+    height: auto;
+}
+.log button{
+    margin: 0 33%;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+}
