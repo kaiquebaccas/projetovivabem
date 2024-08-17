@@ -10,7 +10,7 @@ header.header {
     position: fixed;
     left: 0;
     top: 0;
-    background-color: #faf2f2;
+    background-color: #e6eeed;
     width: 100%;
     height: 160px;
     display: inline-flex;
@@ -30,7 +30,7 @@ nav{
     font-weight: 700;
     transition: 200ms;
 }.nav a:hover{
-    text-shadow: 3px 3px aqua;
+    color: rgb(138, 138, 138);
     transition: 200ms;
 }
 
@@ -81,13 +81,15 @@ div.page {
     height: 400px;
 }
 
-.planos, tr, td {
+table, th, td {
     border: 1px solid;
 }
 .planos {
     width: 50%;
     height: 300px;
-    border-collapse: collapse;
+}
+.planos * {
+    overflow: hidden;
 }
 table {
     font-family: arial;
@@ -95,12 +97,20 @@ table {
     text-align: center;
     width: 100%;
     height: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
 }
 .planos #prim{
     width: 20px;
 }
-tr {
-    background-color: #faf2f2;
+tr#prim th {
+    background-color: #e6eeed;
+}
+th {
+    background-color: #dbe6e4;
+}
+td {
+    background-color: #dbe6e4;
 }
 
 
@@ -113,7 +123,7 @@ section.Titulo {
 
 section.Show {
     color: black;
-    background-color: #faf2f2;
+    background-color: #e6eeed;
     display: flex;
     width: 50%;
     height: 300px;
@@ -132,6 +142,16 @@ section.Show div.desc {
     margin: 20px;
     width: 40%;
     overflow: hidden;
+}
+section.Show div.desc button {
+    background-color: #095797;
+    border-radius: 15px;
+    width: 100%;
+    height: 30%;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
 }
 section.Show div.imagem {
     height: 100%;
@@ -177,7 +197,7 @@ section.Show div.imagem.mb {
     
     section.Show {
         color: black;
-        background-color: #faf2f2;
+        background-color: #e6eeed;
         display: flex;
         flex-flow: column;
         width: 50%;
