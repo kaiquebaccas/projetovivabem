@@ -1,3 +1,5 @@
+
+
 body {
     background-color: #f1fcff;
     margin-top: 175px;
@@ -26,6 +28,10 @@ nav{
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
+    transition: 200ms;
+}.nav a:hover{
+    text-shadow: 3px 3px aqua;
+    transition: 200ms;
 }
 
 #entrar {
@@ -69,7 +75,7 @@ div.page {
     justify-content: center;
 }
 
-section.Titulo { /* que nojo kauan, vc escreve codigo em portugues eca*/
+section.Titulo {
     width: 50%;
     text-align: center;
 }
@@ -81,20 +87,24 @@ section.Show {
     width: 50%;
     height: 300px;
     justify-content: space-between;
+    filter: drop-shadow(1px 1px 10px rgb(192, 192, 192));
+    transition: 200ms;
+}
+section.Show:hover {
+    width: 60%;
+    transition: 200ms;
 }
 
-
 section.Show div.desc {
-    height: 300px;
+    height: 100%;
     margin: 20px;
     width: 40%;
     overflow: hidden;
 }
 section.Show div.imagem {
-    height: 300px;
+    height: 100%;
     overflow: hidden;
-    background-color: rgb(255, 0, 0);
-    width: 350px;
+    width: 50%;
 }
 div.imagem img {
     height: 100%;
@@ -103,82 +113,55 @@ div.imagem img {
     left: -50px;
 }
 
-.carousel {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
+div.mais {
+    font-size: 13px;
+    font-family: arial black;
+    padding: 0 7px;
+    width: min-content;
+    height: min-content;
+    border-radius: 6px;
     overflow: hidden;
-    border-radius: 10px;
+    transition: 0.30s;
 }
 
-.carousel-item {
-    display: none;
-    position: absolute;
-    width: 900px;
-    height: 450px; /* outro tamanho fica horrivel, mas meu monitor é 1366x768, tem que ver isso */
-    top: 0;
-    left: 0;
-    object-fit: cover;
-}
-
-.carousel-item.active {
-    display: block;
-    position: relative;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    font-size: 24px; /* tamanho da seta */
-    color: white; /* cor da seta (melhor deixar branco mesmo) */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+div.mais:hover {
     cursor: pointer;
-    z-index: 2;
+    background-color: #cecece;
+    padding: 2px 10px;
+    transition: 0.30s;
 }
 
-.carousel-control-prev {
-    left: 10px;
+/* 1000px di tela */
+section.Show div.imagem.mb {
+    display: none;
 }
+@media only screen and (max-width: 1000px) {
+    
+    section.Show {
+        color: black;
+        background-color: #faf2f2;
+        display: flex;
+        flex-flow: column;
+        width: 50%;
+        height: 600px;
+        justify-content:flex-end;
+    }
+    section.Show div.desc {
+        height: 40%;
+        margin: 20px;
+        width: 90%;
+        overflow: hidden;
+    }
+    section.Show div.imagem {
+        height: 100%;
+        overflow: hidden;
+        background-color: rgb(255, 0, 0);
+        width: 100%;
+    }
+    section.Show div.imagem.mb {
+        display: block;
+    }section.Show div.imagem.pc {
+        display: none;
+    }
 
-.carousel-control-next {
-    right: 10px;
-}
-section.Show.propaganda{
-    background-color: rgb(255, 162, 162);
-}
-.desc button{
-    background-color: #9230e2;
-    border-radius: 10px;
-    height: 30%;
-    width: 80%;
-    font-size: 18px;
-    font-weight: 800;
-    color: white;
-    border: none;
-}
-.prim{
-    padding: 100px;
-    background-color: #9230e2;
-}
-td{
-    padding: 30px;
-    background-color: aqua;
 }
