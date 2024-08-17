@@ -161,3 +161,24 @@ div.imagem img {
 .carousel-control-next {
     right: 10px;
 }
+section.Show.propaganda{
+    background-color: rgb(255, 162, 162);
+}
+.desc button{
+    background-color: #9230e2;
+    border-radius: 10px;
+    height: 30%;
+    width: 80%;
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+    border: none;
+}
+.prim{
+    padding: 100px;
+    background-color: #9230e2;
+}
+td{
+    padding: 30px;
+    background-color: aqua;
+}
