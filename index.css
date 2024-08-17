@@ -75,6 +75,29 @@ div.page {
     justify-content: center;
 }
 
+/* Index css */
+.carousel {
+    width: 50%;
+    height: 400px;
+}
+
+.planos, th, td {
+    border: 1px solid;
+}
+.planos {
+    width: 50%;
+    border-collapse: collapse;
+}
+table {
+    width: 100%;
+}
+th {
+    height: 70px;
+}
+
+
+
+/* Sobre css */
 section.Titulo {
     width: 50%;
     text-align: center;
@@ -90,7 +113,7 @@ section.Show {
     filter: drop-shadow(1px 1px 10px rgb(192, 192, 192));
     transition: 200ms;
 }
-section.Show:hover {
+section.Show.anim:hover {
     width: 60%;
     transition: 200ms;
 }
@@ -130,6 +153,12 @@ div.mais:hover {
     padding: 2px 10px;
     transition: 0.30s;
 }
+
+
+
+
+
+
 
 /* 1000px di tela */
 section.Show div.imagem.mb {
