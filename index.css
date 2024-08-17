@@ -81,18 +81,26 @@ div.page {
     height: 400px;
 }
 
-.planos, th, td {
+.planos, tr, td {
     border: 1px solid;
 }
 .planos {
     width: 50%;
+    height: 300px;
     border-collapse: collapse;
 }
 table {
+    font-family: arial;
+    font-weight: 700;
+    text-align: center;
     width: 100%;
+    height: 100%;
 }
-th {
-    height: 70px;
+.planos #prim{
+    width: 20px;
+}
+tr {
+    background-color: #faf2f2;
 }
 
 
@@ -110,7 +118,8 @@ section.Show {
     width: 50%;
     height: 300px;
     justify-content: space-between;
-    filter: drop-shadow(1px 1px 10px rgb(192, 192, 192));
+    filter: drop-shadow(1px 1px 10px rgb(192, 192, 192))
+            drop-shadow(-1px -1px 10px rgb(192, 192, 192));
     transition: 200ms;
 }
 section.Show.anim:hover {
