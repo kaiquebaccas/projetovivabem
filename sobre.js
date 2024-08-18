@@ -1,18 +1,7 @@
-const maises = document.querySelectorAll(".mais")
+const maises = document.querySelectorAll(".mais");
 
-for(const mais of maises){
-
-    mais.addEventListener("click",(e) => 
-    {
-        console.log(mais)
-
-    });
-
-    
-
-
-
-
-
-
+for (const mais of maises) {
+  mais.addEventListener("click", (e) => {
+    console.log(mais);
+  });
 }

@@ -22,7 +22,7 @@
     <section>
         <div class="container">
             <div class="form-container">
-                <form id="login-form">
+                <form id="login-form"> <!-- formulário de login -->
                     <h2>Entrar</h2>
                     <div class="input-field">
                         <label for="email">Email:</label>
@@ -30,13 +30,18 @@
                     </div>
                     <div class="input-field">
                         <label for="password">Senha:</label>
-                        <input type="password" id="password" name="password" required placeholder="Digite sua senha">
+                        <input type="password" id="passwordLogin" name="password" required placeholder="Digite sua senha">
+                        
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="mostrar-senha" onclick="showPasswordL()">
+                            <label for="mostrar-senha">Mostrar senha</label>
+                        </div>
                     </div>
                     <button type="submit">Entrar</button>
                     <p>Não tem uma conta? <a href="#" id="register-link">Registrar</a></p>
                 </form>
                 <form id="register-form" style="display: none;">
-                    <h2>Registrar</h2>
+                    <h2>Registrar</h2> <!-- formulário de registro-->
                     <div class="input-field">
                         <label for="username">Nome de usuário:</label>
                         <input type="text" id="username" name="username" required placeholder="Digite seu nome">
@@ -47,7 +52,12 @@
                     </div>
                     <div class="input-field">
                         <label for="password">Senha:</label>
-                        <input type="password" id="password" name="password" required placeholder="Digite sua senha">
+                        <input type="password" id="passwordRegister" name="password" required placeholder="Digite sua senha">
+                        
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="mostrar-senha" onclick="showPasswordR()">
+                            <label for="mostrar-senha">Mostrar senha</label>
+                        </div>
                     </div>
                     <button type="submit">Registrar</button>
                     <p>Já tem uma conta? <a href="#" id="login-link">Entrar</a></p>

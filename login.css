@@ -34,7 +34,7 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="password"]{
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -42,8 +42,24 @@ input[type="password"] {
     box-sizing: border-box;
 }
 
+input[type="checkbox"]{
+    text-align: left; 
+    margin-bottom: 8px; /* LEMBRAR DE TESTAR EM UM MONITOR 1920X1080p */
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+
 button[type="submit"] {
-    background-color: #9cccec;
+    background-color: #4da0d8;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -53,11 +69,11 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #8cb7d3;
+    background-color: #377ba8;
 }
 
 a {
-    color: #9cccec;
+    color: #4e9bcf;
     text-decoration: none;
 }
 
