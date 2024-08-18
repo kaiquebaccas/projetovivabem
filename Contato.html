@@ -1,50 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width-device-witdh, initial-scale-1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width-device-witdh, initial-scale-1.0" />
     <title>Formulário</title>
-<link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="Contato.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="Contato.css" />
+  </head>
+  <body>
     <header class="header">
-        <h1><a href="#" class="logo"><img src="IMG/V.png" alt="VivaBem"></a></h1>
-        <nav class="nav">
-            <a href="Index.html">Home</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="#">Ajuda</a>
-            <a href="Contato.html">Contato</a>
-        </nav>
-        <button onclick="location.href='Login.html'" type="button" id="entrar">Entrar</button>
+      <h1>
+        <a href="#" class="logo"><img src="IMG/V.png" alt="VivaBem" /></a>
+      </h1>
+      <nav class="nav">
+        <a href="Index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="#">Ajuda</a>
+        <a href="Contato.html">Contato</a>
+      </nav>
+      <button onclick="location.href='Login.html'" type="button" id="entrar">
+        Entrar
+      </button>
     </header>
     <div class="container">
+      <div class="form_box">
+        <h2 class="title">Contate-nos</h2>
 
-        <div class="form_box">
-            <h2 class="title">Contate-nos</h2>
+        <form action="" method="get">
+          <input type="text" name="name" placeholder="Seu nome" />
+          <input type="text" name="email" placeholder="Seu E-mail" />
+          <input type="text" name="subject" placeholder="Assunto" />
 
-            <form action="" method="get">
+          <textarea name="message" placeholder="Digite sua mensagem"></textarea>
 
-                <input type="text" name="name" placeholder="Seu nome">
-                <input type="text" name="email" placeholder="Seu E-mail">
-                <input type="text" name="subject" placeholder="Assunto">
-
-                <textarea name="message" placeholder="Digite sua mensagem"></textarea>
-            
-                <button type="submit">Enviar Mensagem</button>
-            
-            </form>
-            
-        </div>
-
-
+          <button type="submit">Enviar Mensagem</button>
+        </form>
+      </div>
     </div>
-
-
-
-
-
-</body>
+  </body>
+</html>

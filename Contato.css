@@ -7,7 +7,7 @@
 
 }
 body {
-    background-color: rgb(138, 138, 138);
+    background-color: #f1fcff;
 
 }
 
@@ -28,7 +28,7 @@ textarea {
 .form_box {
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    background-color: #e6eeed;
     border-radius:8px;
     width: 700px;
 
@@ -53,12 +53,13 @@ textarea {
 .form_box textarea{
     width: calc(50% - 8px);
     height: 48px;
-    border-radius: 8px;
-    border: thin solid #000000;
+    border-radius: 3px;
+    border: 1px solid #ccc;
     padding-left: 16px;
     margin-bottom: 16px;
     font-size: 16px;
 }
+
 .form_box input:first-child{
     margin-right: 16px;
 }
@@ -79,7 +80,7 @@ textarea {
     width: 180px;
     height: 48px;
     border-radius: 8px;
-    background-color: rgb(0, 0, 0);
+    background-color: #4da0d8;
     color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: bold;
@@ -87,6 +88,6 @@ textarea {
 }
 
 .form_box button:hover{
-    background-color: rgb(22, 22, 134);
+    background-color: #377ba8;
 
 }
