@@ -222,3 +222,40 @@ section.Show div.imagem.mb {
     }
 
 }
+/*rodapé*/ 
+footer {
+    background-color:  #e6eeed; 
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#rodapeimg {
+    width: 30%; 
+    height: 30%;
+    margin-left: 16%;
+}
+
+#redes {
+    float: right;
+    list-style: none;
+    display: flex;
+    gap: 10px; 
+    padding-top: 5%;
+    margin-right: -80%;
+}
+#redes li {
+    display: inline;
+}
+
+#redes img {
+    width: 30px; 
+    height: auto; 
+    transition: transform 0.3s; 
+}
+
+#redes img:hover {
+    transform:scale(1.1);
+}
+/*cabo*/
