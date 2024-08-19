@@ -88,6 +88,7 @@ table, th, td {
 .planos {
     width: 50%;
     height: 300px;
+    margin-bottom: 5%;
 }
 .planos * {
     overflow: hidden;
@@ -132,7 +133,11 @@ section.Show {
     filter: drop-shadow(1px 1px 10px rgb(192, 192, 192))
             drop-shadow(-1px -1px 10px rgb(192, 192, 192));
     transition: 200ms;
+    margin-top: 8%;
+    border: none;
+    border-radius: 5px;
 }
+
 section.Show.anim:hover {
     width: 60%;
     transition: 200ms;
@@ -158,6 +163,8 @@ section.Show div.imagem {
     height: 100%;
     overflow: hidden;
     width: 50%;
+    border: none;
+    border-radius: 3px;
 }
 div.imagem img {
     height: 100%;
@@ -166,29 +173,6 @@ div.imagem img {
     left: -50px;
 }
 
-div.mais {
-    font-size: 13px;
-    font-family: arial black;
-    padding: 0 7px;
-    width: min-content;
-    height: min-content;
-    border-radius: 6px;
-    overflow: hidden;
-    transition: 0.30s;
-}
-
-div.mais:hover {
-    cursor: pointer;
-    background-color: #cecece;
-    padding: 2px 10px;
-    transition: 0.30s;
-}
-
-
-
-
-
-/* 1000px di tela */
 section.Show div.imagem.mb {
     display: none;
 }
@@ -229,6 +213,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    clear:left;
 }
 
 #rodapeimg {
