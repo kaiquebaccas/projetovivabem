@@ -80,6 +80,7 @@ div.page {
 .carousel {
     width: 50%;
     height: 400px;
+    margin: 8%;
 }
 
 table, th, td {
@@ -115,7 +116,9 @@ td {
     background-color: #dbe6e4;
 }
 
-
+.textoprop {
+    font-size: 18px;
+} 
 
 /* Sobre css */
 section.Titulo {
