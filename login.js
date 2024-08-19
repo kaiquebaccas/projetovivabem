@@ -21,10 +21,10 @@ eu dividi em duas funções: uma pra parte de login e outra pra parte de registr
 
 function showPasswordL() {
   var x = document.getElementById("passwordLogin");
-  if (x.type === "password") { // se o tipo for senha
-    x.type = "text"; // o tipo vai virar "text", pra mostrar a senha
+  if (x.type === "password") { // Se o tipo for senha
+    x.type = "text"; // O tipo vai virar "text", pra mostrar a senha
   } else {
-    x.type = "password"; // vice-versa
+    x.type = "password"; // Reverte (vice-versa)
   }
 }
 
