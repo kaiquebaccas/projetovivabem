@@ -50,3 +50,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   startAutoPlay();
 });
+'use strict'
+const switcher = document.querySelector('.btn'); //Usar Seletor
+switcher.addEventListener('click', function() {
+    document.body.classList.toggle('dark-theme')
+
+    var className = document.body.className;
+    if(className == "light-theme") { // Se estiver no tema claro// 
+        this.textContent = "Dark"; // O texto deve ser escrito escuro // 
+    }
+    else {
+        this.textContent = "Light"; //Se não, deve ser escrito claro//
+    }
+    console.log('current class name: ' + className);
+});
