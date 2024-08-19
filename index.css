@@ -80,7 +80,7 @@ div.page {
 .carousel {
     width: 50%;
     height: 400px;
-    margin: 8%;
+    margin-bottom: 8%;
 }
 
 table, th, td {
