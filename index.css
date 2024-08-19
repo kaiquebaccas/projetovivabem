@@ -133,7 +133,7 @@ section.Show {
     filter: drop-shadow(1px 1px 10px rgb(192, 192, 192))
             drop-shadow(-1px -1px 10px rgb(192, 192, 192));
     transition: 200ms;
-    margin-top: 8%;
+    margin-bottom: 2%;
     border: none;
     border-radius: 5px;
 }
@@ -148,6 +148,7 @@ section.Show div.desc {
     margin: 20px;
     width: 40%;
     overflow: hidden;
+    font-size: 28px;
 }
 section.Show div.desc button {
     background-color: #095797;
@@ -170,7 +171,7 @@ div.imagem img {
     height: 100%;
     object-fit: cover;
     position: relative;
-    left: -50px;
+    left: 50px;
 }
 
 section.Show div.imagem.mb {
