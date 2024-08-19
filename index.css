@@ -232,7 +232,7 @@ footer {
     display: flex;
     gap: 10px; 
     padding-top: 5%;
-    margin-right: -165%;
+    margin-right: -165%;/*Posicionamento das redes socias*/
 }
 #redes li {
     display: inline;
@@ -241,10 +241,10 @@ footer {
 #redes img {
     width: 35px; 
     height: auto; 
-    transition: transform 0.3s; 
+    transition: transform 0.3s; /*Tempo da transformação*/
 }
 
 #redes img:hover {
-    transform:scale(1.1);
+    transform:scale(1.1);/*Animação quando passa o mouse por cima das imagens do rodapé*/
 }
-/*cabo*/
+/*fim*/
