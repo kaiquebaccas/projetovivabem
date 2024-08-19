@@ -247,4 +247,28 @@ footer {
 #redes img:hover {
     transform:scale(1.1);/*Animação quando passa o mouse por cima das imagens do rodapé*/
 }
+:root {
+    --gray: #303134;
+    --black: #1f1f1f;
+    --white: #ffffff;
+    --blue: #095797;
+    --awhite: #e6eeed;
+}
+* {
+    color: var(--fontcolor);
+}
+header{
+    background: var(--bgh)
+}
+body {
+     background: var(--bg);
+}
+.light-theme {
+    --bg: var(--white);
+    --fontcolor: var(--black);
+}
+.dark-theme {
+    --bg: var(--black);
+    --fontcolor: black;
+}
 /*fim*/
