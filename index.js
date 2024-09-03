@@ -50,17 +50,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
   startAutoPlay();
 });
-'use strict'
-const switcher = document.querySelector('.btn'); //Usar Seletor
-switcher.addEventListener('click', function() {
-    document.body.classList.toggle('dark-theme')
 
-    var className = document.body.className;
-    if(className == "light-theme") { // Se estiver no tema claro// 
-        this.textContent = "Dark"; // O texto deve ser escrito escuro // 
-    }
-    else {
-        this.textContent = "Light"; //Se não, deve ser escrito claro//
-    }
-    console.log('current class name: ' + className);
+
+document.getElementById('toggle-tema').addEventListener('click', function() {
+  // Alterna a classe no body
+  document.body.classList.toggle('dark-tema');
+
+  // Seleciona o elemento header e alterna a classe 
+  const header = document.querySelector('header');
+  header.classList.toggle('dark-tema');
+  
+  
+  // Seleciona o elemento footer e alterna a classe 
+  const footer = document.querySelector('footer');
+  footer.classList.toggle('dark-tema');
+
+  // Seleciona todo o 'content' e alterna a classe 
+  const elementos = document.getElementsByClassName('content');
+  for (let i = 0; i < elementos.length; i++) {
+      contentElements[i].classList.toggle('dark-tema');
+  }
 });

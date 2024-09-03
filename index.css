@@ -54,6 +54,26 @@ nav{
     filter: drop-shadow(1px 1px 2px rgb(192, 192, 192))
             drop-shadow(-1px -1px 2px rgb(192, 192, 192));}
 
+#toggle-tema {
+    float: right;
+    margin-right: 1%;
+    margin-top: 4%;
+    margin-left: 6%;
+    height: 30%;
+    width: 6%;
+    background-color: black;
+    border-radius: 12px;
+    border: none;
+    color: #eafbff;
+    font-weight: 700;
+}
+#toggle-tema:hover {
+    color: #e6eeed;
+    background-color: #1e93f3;
+    transition: 0.30s;
+    filter: drop-shadow(1px 1px 2px rgb(192, 192, 192))
+            drop-shadow(-1px -1px 2px rgb(192, 192, 192));
+}
 div.spacer {
     width: 20px;
     height: 30px;
@@ -212,7 +232,6 @@ section.Show div.imagem.mb {
 }
 /*rodapé*/ 
 footer {
-    background-color:  #e6eeed; 
     padding: 1%;
     display: flex;
     justify-content: space-between;
@@ -248,27 +267,55 @@ footer {
     transform:scale(1.1);/*Animação quando passa o mouse por cima das imagens do rodapé*/
 }
 :root {
-    --gray: #303134;
-    --black: #1f1f1f;
-    --white: #ffffff;
-    --blue: #095797;
-    --awhite: #e6eeed;
+    --background-color-light: #ffffff;
+    --text-color-light: #000000;
+    --background-color-dark: #333333;
+    --text-color-dark: #ffffff;
+    --imagem-light: url('IMG/V\ sem\ fundo.png') ;
+    --imagem-dark: url('IMG/facebook.png'); 
 }
-* {
-    color: var(--fontcolor);
-}
-header{
-    background: var(--bgh)
-}
+
 body {
-     background: var(--bg);
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    transition: background-color 0.3s, color 0.3s;
 }
-.light-theme {
-    --bg: var(--white);
-    --fontcolor: var(--black);
+
+body.dark-tema {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
 }
-.dark-theme {
-    --bg: var(--black);
-    --fontcolor: black;
+
+footer {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+footer.dark-tema {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+header {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+header.dark-tema {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+.content {
+    padding: 20px;
+}
+
+.container-imagem {
+    width: 200px;
+    height: 200px;
+    background-image: var(--imagem-light);
+    background-size: cover;
+    background-position: center;
+}
+
+body.dark-tema .container-imagem {
+    background-image: var(--imagem-dark);
 }
 /*fim*/
