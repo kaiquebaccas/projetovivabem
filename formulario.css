@@ -1,0 +1,41 @@
+.orcamento{
+    display: flex;
+    justify-content: center;
+}
+
+.input-orcamento{
+    background-color: #e6eeed;
+    padding: 30px;
+    border: solid rgb(179, 177, 177) 1px;
+    border-radius: 4px;
+    max-width: 40%;
+    text-align: center;
+}
+.inputs-orcamento{
+display: flex;
+}
+input.orc{
+    display: block;
+    max-width: fit-content;
+    margin: 3% auto;
+    border: solid rgb(179, 177, 177) 1px;
+    border-radius: 4px;
+    background-color: rgb(238, 238, 235);
+}
+.input-orcamentos{
+    display: flex;
+    justify-content: space-between;
+}
+.inputss-orcamento{
+    display: block;
+}
+#acomp{
+    height: 100px;
+    width: 90%;
+}
+
+.btn-submit{
+    background-color: rgb(143, 143, 223);
+    height: 40px;
+    width: 425px;
+}
