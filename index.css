@@ -146,9 +146,7 @@ section.Titulo {
     text-align: center;
 }
 
-section.Show {
-    color: black;
-    background-color: #e6eeed;
+section.show {
     display: flex;
     width: 50%;
     height: 300px;
@@ -161,19 +159,19 @@ section.Show {
     border-radius: 5px;
 }
 
-section.Show.anim:hover {
+section.show.anim:hover {
     width: 60%;
     transition: 200ms;
 }
 
-section.Show div.desc {
+section.show div.desc {
     height: 100%;
     margin: 20px;
     width: 40%;
     overflow: hidden;
     font-size: 28px;
 }
-section.Show div.desc button {
+section.show div.desc button {
     background-color: #095797;
     border-radius: 15px;
     width: 100%;
@@ -183,7 +181,7 @@ section.Show div.desc button {
     font-weight: 700;
     border: none;
 }
-section.Show div.imagem {
+section.show div.imagem {
     height: 100%;
     overflow: hidden;
     width: 50%;
@@ -197,35 +195,34 @@ div.imagem img {
     left: 50px;
 }
 
-section.Show div.imagem.mb {
+section.show div.imagem.mb {
     display: none;
 }
 @media only screen and (max-width: 1000px) {
     
-    section.Show {
+    section.show {
         color: black;
-        background-color: #e6eeed;
         display: flex;
         flex-flow: column;
         width: 50%;
         height: 600px;
         justify-content:flex-end;
     }
-    section.Show div.desc {
+    section.show div.desc {
         height: 40%;
         margin: 20px;
         width: 90%;
         overflow: hidden;
     }
-    section.Show div.imagem {
+    section.show div.imagem {
         height: 100%;
         overflow: hidden;
         background-color: rgb(255, 0, 0);
         width: 100%;
     }
-    section.Show div.imagem.mb {
+    section.show div.imagem.mb {
         display: block;
-    }section.Show div.imagem.pc {
+    }section.show div.imagem.pc {
         display: none;
     }
 
@@ -273,6 +270,8 @@ footer {
     --text-color-dark: #ffffff;
     --imagem-light: url('IMG/V\ sem\ fundo.png') ;
     --imagem-dark: url('IMG/facebook.png'); 
+    --background-header-dark: #747474;
+    --background-header-light: #e6eeed;
 }
 
 body {
@@ -292,15 +291,15 @@ footer {
 }
 
 footer.dark-tema {
-    background-color: var(--background-color-dark);
+    background-color: var(--background-header-dark);
     color: var(--text-color-dark);
 }
 header {
-    background-color: var(--background-color-light);
+    background-color: var(--background-header-light);
     color: var(--text-color-light);
 }
 header.dark-tema {
-    background-color: var(--background-color-dark);
+    background-color: var(--background-header-dark);
     color: var(--text-color-dark);
 }
 .content {
@@ -314,8 +313,29 @@ header.dark-tema {
     background-size: cover;
     background-position: center;
 }
+section.show {
+    background-color: #e6eeed;
+}
 
+table {
+    color: black;
+}
+
+p.dark-tema {
+    color: black;
+}
 body.dark-tema .container-imagem {
     background-image: var(--imagem-dark);
 }
+
+tr.#prim.dark-tema th.dark-tema {
+    background-color: black;
+}
+th.dark-tema {
+    background-color: black;
+}
+td.dark-tema {
+    background-color: black;
+}
+
 /*fim*/

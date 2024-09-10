@@ -80,3 +80,57 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+#toggle-tema {
+    float: right;
+    margin-right: 1%;
+    margin-top: 4%;
+    margin-left: 6%;
+    height: 30%;
+    width: 6%;
+    background-color: black;
+    border-radius: 12px;
+    border: none;
+    color: #eafbff;
+    font-weight: 700;
+}
+
+:root {
+    --background-color-light: #ffffff;
+    --text-color-light: #000000;
+    --background-color-dark: #333333;
+    --text-color-dark: #ffffff;
+    --imagem-light: url('IMG/V\ sem\ fundo.png') ;
+    --imagem-dark: url('IMG/facebook.png'); 
+    --background-header-dark: #747474;
+    --background-header-light: #e6eeed;
+}
+
+body {
+    background-color: var(--background-color-light);
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-tema {
+    background-color: var(--background-color-dark);
+    color: black;
+}
+
+footer {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+footer.dark-tema {
+    background-color: var(--background-header-dark);
+    color: var(--text-color-dark);
+}
+header {
+    background-color: var(--background-header-light);
+    color: var(--text-color-light);
+}
+header.dark-tema {
+    background-color: var(--background-header-dark);
+    color: var(--text-color-dark);
+}

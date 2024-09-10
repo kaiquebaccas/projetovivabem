@@ -70,4 +70,7 @@ document.getElementById('toggle-tema').addEventListener('click', function() {
   for (let i = 0; i < elementos.length; i++) {
       contentElements[i].classList.toggle('dark-tema');
   }
+
+  const p = document.querySelector('p');
+  p.classList.toggle('dark-tema')
 });
