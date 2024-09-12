@@ -328,14 +328,11 @@ body.dark-tema .container-imagem {
     background-image: var(--imagem-dark);
 }
 
-tr.#prim.dark-tema th.dark-tema {
-    background-color: black;
-}
-th.dark-tema {
-    background-color: black;
-}
-td.dark-tema {
-    background-color: black;
-}
 
+p {
+    color: var(--text-color-light);
+}
+p.dark-tema {
+    color: black;
+}
 /*fim*/

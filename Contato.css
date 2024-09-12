@@ -91,3 +91,24 @@ textarea {
     background-color: #377ba8;
 
 }
+:root {
+    --background-color-light: #ffffff;
+    --text-color-light: #000000;
+    --background-color-dark: #333333;
+    --text-color-dark: #ffffff;
+    --imagem-light: url('IMG/V\ sem\ fundo.png') ;
+    --imagem-dark: url('IMG/facebook.png'); 
+    --background-header-dark: #747474;
+    --background-header-light: #e6eeed;
+}
+
+body {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-tema {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-light);
+}
