@@ -85,6 +85,10 @@ nav{
     width: 500px;
 }
 
+#email {
+    text-transform: lowercase;
+}
+
 #toggle-tema {
     margin-left: 7%;
     height: 25%;
