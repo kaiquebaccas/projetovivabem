@@ -12,15 +12,38 @@
 </head> 
 <body>
     <header class="header">
-        <h1><a href="#" class="logo"><img src="IMG/image-removebg-preview.png" alt="VivaBem"></a></h1>
+        <div class="logo"><h2><img src="IMG/V sem fundo.png" alt="VivaBem"></h2></div>
+
         <nav class="nav">
+
             <a href="Index.html">Home</a>
             <a href="sobre.html">Sobre</a>
             <a href="Contato.html">Contato</a>
+
+                  <button onclick="location.href='Login.html'" type="button" id="entrar">Entrar</button>
+                  <button id="toggle-tema">Alternar Tema</button>
+
         </nav>
-        <button onclick="location.href='Login.html'" type="button" id="entrar">Entrar</button>
-        <button id="toggle-tema">Alternar Tema</button>
+
+  
+
     </header>
+
+    <section id="modal">
+        <dialog id="coki">
+
+        <h2>Cookies! <img src="IMG/cookie-svgrepo-com.svg"> </h2>    
+        <p>O nosso site usa cookies para garantir uma melhor experiencia de usuário</p>
+        <label for="novamente">
+        <input type="checkbox" id="novamente">Não mostrar novamente</input>
+        </label>
+
+        <button id="fechar">Compreendo</button>
+
+        </dialog>
+    </section>
+
+
 <div class="page">
     <div id="carrossel" class="carousel"> <!-- se não estiver óbvio: carrossel -->
         <div class="carousel-item active">
