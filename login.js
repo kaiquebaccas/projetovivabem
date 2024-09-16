@@ -37,9 +37,30 @@ function showPasswordR() {
   }
 }
 
-function validarFormulario(){
-  
-}
+document.getElementById('register-form').addEventListener('submit', function(event) {
+  // Prevenir o envio do formulário como padrão.
+  event.preventDefault();
+
+  // Obter os valores
+  var username = document.getElementById('username').value.trim();
+  var password = document.getElementById('passwordRegister').value.trim();
+
+  // Validar nome de usuário
+  if (username === '' || username.length < 3) {
+      alert('O nome de usuário deve ter pelo menos 3 caracteres.');
+      return;
+  }
+
+  // Validando a senha para que tenha ao menos 4 caracteres.
+  if (password === '' || password.length < 4) {
+      alert('A senha deve ter pelo menos 4 caracteres.');
+      return;
+  }
+
+  // Se todas as validações passarem, enviar o formulário
+  this.submit();
+});
+
 
 document.getElementById('toggle-tema').addEventListener('click', function() {
   // Alterna a classe no body
