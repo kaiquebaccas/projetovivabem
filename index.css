@@ -116,7 +116,7 @@ input[type='checkbox']{
     height: 50px;
     width: 200px;
     font-size: 20px;
-    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin-top: 2%;
     background-color: black;
     border-radius: 12px;
