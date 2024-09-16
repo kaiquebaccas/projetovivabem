@@ -37,6 +37,24 @@ function showPasswordR() {
   }
 }
 
+document.getElementById('login-form').addEventListener('submit', function(event) {
+  // Prevenir o envio do formulário como padrão.
+  event.preventDefault();
+
+  // Obter o valor
+  var password = document.getElementById('passwordRegister').value.trim();
+
+  // Validar Senha
+  if (password === '' || password.length < 4) {
+      alert('A senha deve ter pelo menos 4 caracteres.');
+      return;
+  }
+
+  // Tudo Certo ;) Envia o formulário
+  this.submit();
+});
+
+
 document.getElementById('register-form').addEventListener('submit', function(event) {
   // Prevenir o envio do formulário como padrão.
   event.preventDefault();
@@ -46,18 +64,18 @@ document.getElementById('register-form').addEventListener('submit', function(eve
   var password = document.getElementById('passwordRegister').value.trim();
 
   // Validar nome de usuário
-  if (username === '' || username.length < 3) {
-      alert('O nome de usuário deve ter pelo menos 3 caracteres.');
+  if (username === '' || username.length < 3) {                     //Se o tamanho do nome de usuário for menor do que 3 caracteres
+      alert('O nome de usuário deve ter pelo menos 3 caracteres.'); //Alerte que a senha deve ter ao menos 3 caracteres e retorne
       return;
   }
 
   // Validando a senha para que tenha ao menos 4 caracteres.
-  if (password === '' || password.length < 4) {
-      alert('A senha deve ter pelo menos 4 caracteres.');
+  if (password === '' || password.length < 4) {            //Se o tamanho da senha for menor do que 4 caracteres
+      alert('A senha deve ter pelo menos 4 caracteres.');   //Alerte que a senha deve ter ao menos 4 caracteres e retorne
       return;
   }
 
-  // Se todas as validações passarem, enviar o formulário
+  // Tudo certo ;) Envia o formulário
   this.submit();
 });
 
