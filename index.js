@@ -65,12 +65,6 @@ document.getElementById('toggle-tema').addEventListener('click', function() {
   const footer = document.querySelector('footer');
   footer.classList.toggle('dark-tema');
 
-  // Seleciona todo o 'content' e alterna a classe 
-  const elementos = document.getElementsByClassName('content');
-  for (let i = 0; i < elementos.length; i++) {
-      contentElements[i].classList.toggle('dark-tema');
-  }
-
   const p = document.querySelector('p');
   p.classList.toggle('dark-tema')
 });
