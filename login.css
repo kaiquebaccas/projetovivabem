@@ -81,6 +81,9 @@ a:hover {
     text-decoration: underline;
 }
 
+nav{
+    width: 500px;
+}
 
 #toggle-tema {
     margin-left: 7%;
@@ -91,6 +94,20 @@ a:hover {
     border: none;
     color: #eafbff;
     font-weight: 700;
+}
+
+#voltar{
+    margin-top: -4px;
+    margin-left: 0%;
+    height: 25%;
+    width: 170px;
+    border: none;
+    background-color: #e6eeed;
+    font-weight: 700;
+}
+
+#voltar img{
+    width: 20%;
 }
 
 :root {
