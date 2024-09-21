@@ -100,7 +100,7 @@ nav{
     font-weight: 700;
 }
 
-#voltar{
+.voltar{
     margin-top: -4px;
     margin-left: 0%;
     height: 25%;
@@ -110,7 +110,7 @@ nav{
     font-weight: 700;
 }
 
-#voltar img{
+.voltar img{
     width: 20%;
 }
 
@@ -153,3 +153,23 @@ header.dark-tema {
     background-color: var(--background-header-dark);
     color: var(--text-color-dark);
 }
+
+.voltar {
+    background-color: var(--background-header-light);
+}
+
+.voltar.dark-tema {
+    background-color: var(--background-header-dark);
+}
+
+/* Erros da validação */
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  input.error {
+    border: 2px solid red;
+  }

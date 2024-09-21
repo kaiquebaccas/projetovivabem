@@ -74,7 +74,7 @@ document.getElementById('toggle-tema').addEventListener('click', function() {
 document.addEventListener('DOMContentLoaded', ()=>{
 
 // POP-UP ---------------------------------------------------------------------------------------
-const popup = document.getElementById('coki');
+const popup = document.getElementById('cookieDialog');
 const novamente = document.getElementById('novamente');
 const fechar = document.getElementById('fechar');
 const tudo = document.getElementById('modal');
@@ -93,22 +93,22 @@ function setcookie(name, value, days){
 }
 
 function getcookie(name){
-  let nameehigual = name + "="
+  let nomeIgual = name + "="
 
-  let arraydecoki = document.cookie.split(';') // divide cada cookie como uma posição na array, usando ';' pra delimitar
+  let arrayCookie = document.cookie.split(';') // divide cada cookie como uma posição na array, usando ';' pra delimitar
 
-  for(x = 0; x < arraydecoki.length; x++) //ou seja, para cada cookie na array de cookies
+  for(x = 0; x < arrayCookie.length; x++) //ou seja, para cada cookie na array de cookies
   {
-    let cookie = arraydecoki[x];
+    let cookie = arrayCookie[x];
 
     while(cookie.charAt(0) === ' ') //enquanto a primeira letra de cookie for vazia, ...
     {
       cookie = cookie.substring(1) // cookie vai valer ele mesmo, sem a posição 0, para evitar espaços vazios antes de ';'
     };
 
-    if(cookie.indexOf(nameehigual) === 0) // se nameehigual for encontrado em cookie na posição 0, ou seja, se os nomes forem os mesmos, ...
+    if(cookie.indexOf(nomeIgual) === 0) // se nameehigual for encontrado em cookie na posição 0, ou seja, se os nomes forem os mesmos, ...
       {
-        return cookie.substring(nameehigual.length, cookie.length) // retorna o valor do cookie, que é a substring cortando a parte que eles são os mesmos até o final de cookie
+        return cookie.substring(nomeIgual.length, cookie.length) // retorna o valor do cookie, que é a substring cortando a parte que eles são os mesmos até o final de cookie
       }
 
       return null; // se nada disso acontecer, e o cookie n existir, retorna nula
@@ -118,9 +118,9 @@ function getcookie(name){
 }
 
 function checkcookie(){
-  const popupado = getcookie('popupShown') //busca o valor retornado pela getcookie, 'popupShown' se for encontrado ou null se não, e armazena esse valor na popupado
+  const popupAtivado = getcookie('popupShown') //busca o valor retornado pela getcookie, 'popupShown' se for encontrado ou null se não, e armazena esse valor na popupado
 
-  if(popupado === 'true') // se popupado encontrou valor true
+  if(popupAtivado === 'true') // se popupado encontrou valor true
   {
     return; //não mostra o popup, pq o usuario ja optou por não ve-lo
   }
