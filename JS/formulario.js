@@ -18,11 +18,32 @@ document.getElementById('toggle-tema').addEventListener('click', function() {
     // Seleciona o elemento header e alterna a classe 
     const header = document.querySelector('header');
     header.classList.toggle('dark-tema');
-    
-    // Seleciona o elemento footer e alterna a classe 
-    const footer = document.querySelector('footer');
-    footer.classList.toggle('dark-tema');
   
     const p = document.querySelector('p');
     p.classList.toggle('dark-tema')
+
+    const desc = document.querySelector('desc')
+    desc.classList.toggle('dark-tema')
   });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const telefoneInput = document.getElementById('telefone');
+
+    telefoneInput.addEventListener('input', function(e) {
+        // não permite que letras sejam colocadas
+        let inputValue = e.target.value.replace(/\D/g, '');
+
+        // adiciona a máscara
+        if (inputValue.length > 10) {
+            inputValue = inputValue.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3');
+        } else if (inputValue.length > 5) {
+            inputValue = inputValue.replace(/^(\d{2})(\d{5})(\d{0,4})$/, '($1) $2-$3');
+        } else if (inputValue.length > 2) {
+            inputValue = inputValue.replace(/^(\d{2})(\d{0,5})$/, '($1) $2');
+        } else if (inputValue.length > 0) {
+            inputValue = inputValue.replace(/^(\d{2})/, '($1)');
+        }
+
+        e.target.value = inputValue;
+    });
+});
