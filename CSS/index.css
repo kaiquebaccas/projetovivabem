@@ -426,4 +426,9 @@ p.dark-tema {
   transform: translateX(4.1em);
  }
  
- #map { height: 180px; }
+ #map { 
+  height: 45dvh;
+  width: 100dvh;
+  margin: 0 auto;
+  border: 1px solid black;
+ }
