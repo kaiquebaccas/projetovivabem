@@ -70,8 +70,12 @@ Array.from(switches).forEach(switchElement => {
         footer.classList.toggle('dark-tema');
 
         // Seleciona o parágrafo e alterna a classe
-        const p = document.querySelector('p');
-        p.classList.toggle('dark-tema');
+        const paragrafo = document.querySelector('p');
+        paragrafo.classList.toggle('dark-tema');
+
+        // Seleciona as Redes Sociais
+        const redessociais = document.getElementsByClassName('socialContainer');
+        redessociais.classList.toggle('dark-tema');
     });
 });
 // espera até que todo o documento seja carregado
