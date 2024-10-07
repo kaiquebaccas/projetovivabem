@@ -428,7 +428,8 @@ p.dark-tema {
  
  #map { 
   height: 45dvh;
-  width: 100dvh;
+  width: 103dvh;
   margin: 0 auto;
+  margin-bottom: 10dvh;
   border: 1px solid black;
  }
