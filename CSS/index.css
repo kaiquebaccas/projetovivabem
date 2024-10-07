@@ -433,3 +433,11 @@ p.dark-tema {
   margin-bottom: 10dvh;
   border: 1px solid black;
  }
+
+.leaflet-control-attribution {
+  display: none;
+}
+
+.leaflet-control {
+  display: none;
+}
