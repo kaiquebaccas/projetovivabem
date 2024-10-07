@@ -425,3 +425,16 @@ p.dark-tema {
  input:checked + .slider:before {
   transform: translateX(4.1em);
  }
+ 
+ #map { 
+  height: 45dvh;
+  width: 103dvh;
+  margin: 0 auto;
+  margin-bottom: 10dvh;
+  border: 1px solid black;
+ }
+
+.leaflet-control-attribution {
+  display: none;
+}
+

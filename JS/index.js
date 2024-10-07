@@ -149,3 +149,13 @@ function fecharpopup(){
 
 
 });
+
+var map = L.map('map').setView([-24.008191441703165, -46.43461477726323], 18); //Define o ponto central do mapa (-24.008191441703165, -46.43461477726323) e o Zoom que será dado nesse ponto (18)
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map); //Faz com que os Tiles (Pedaços quadrados de imagens) se posicionem de forma coordenada
+
+var marker = L.marker([-24.008191441703165, -46.43461477726323]).addTo(map) //Cria um marcador (Aquela seta)
+    .bindPopup('Clínica Viva Bem') // Cria um popup ativado ao clique que mostra o texto "Clínica Viva Bem"
+    .openPopup(); //Abre o PopUp como padrão
