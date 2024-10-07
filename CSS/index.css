@@ -425,3 +425,4 @@ p.dark-tema {
  input:checked + .slider:before {
   transform: translateX(4.1em);
  }
+ #map { height: 180px; }
