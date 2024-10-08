@@ -29,6 +29,7 @@ h2 {
 
 body.dark-tema .input-field input {
     background-color: #555555;
+    border: 1px #444;
 }
 
 label {

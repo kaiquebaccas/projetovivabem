@@ -100,7 +100,7 @@ p.dark-tema {
 body.dark-tema .form-group input, 
 body.dark-tema .form-group textarea {
     background-color: #555;
-    border-color: #777;
+    border-color: #444;
     color: #fff;
 }
 
