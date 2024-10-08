@@ -224,3 +224,4 @@ Array.from(switches).forEach(switchElement => {
         setavoltar.classList.toggle('dark-tema');
     });
 });
+

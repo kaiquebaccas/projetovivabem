@@ -113,6 +113,18 @@ body.dark-tema {
     color: var(--text-color-light);
 }
 
+body.dark-tema .form_box {
+    background-color: #444;
+    color: white;
+}
+
+body.dark-tema .form_box input, 
+body.dark-tema .form_box textarea {
+    background-color: #555;
+    border-color: #444;
+    color: #fff;
+}
+
 
 /*O switch*/ 
 .switch {

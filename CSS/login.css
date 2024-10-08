@@ -47,9 +47,12 @@ input[type="password"]{
     box-sizing: border-box;
 }
 
+
+
 input[type="checkbox"]{
     text-align: left; 
-    margin-bottom: 8px; /* LEMBRAR DE TESTAR EM UM MONITOR 1920X1080p */
+    margin-bottom: 8px; 
+    /* LEMBRAR DE TESTAR EM UM MONITOR 1920X1080p */
 }
 
 .checkbox-container {
@@ -206,3 +209,4 @@ body.dark-tema .container {
     border: 1px white;
     color: white;
 }
+

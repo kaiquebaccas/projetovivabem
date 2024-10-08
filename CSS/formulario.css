@@ -48,7 +48,7 @@ body.dark-tema ::placeholder {
 
 body.dark-tema .form-container {
     background-color: #444;
-    border-color: #888;
+    border-color: #333333;
     color: #fff;
 }
 
@@ -103,6 +103,8 @@ body.dark-tema .form-group textarea {
     border-color: #444;
     color: #fff;
 }
+
+
 
 .btn-submit {
     background-color: #007bff;
