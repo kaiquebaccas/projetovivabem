@@ -194,19 +194,33 @@ function validatePassword(password) {
 
 // Tema
 
-document.getElementById('toggle-tema').addEventListener('click', function() {
-  // Alterna a classe no body
-  document.body.classList.toggle('dark-tema');
+// Seleciona todos os checkboxes com a classe 'switch' (no caso só 1)
+const switches = document.getElementsByClassName('switch');
 
-  // Seleciona o elemento header e alterna a classe 
-  const header = document.querySelector('header');
-  header.classList.toggle('dark-tema');
+// Adiciona um evento de 'change' a cada checkbox
+Array.from(switches).forEach(switchElement => {
+    switchElement.addEventListener('change', function() {
+        // Alterna a classe no body
+        document.body.classList.toggle('dark-tema');
 
-  // Seleciona o botão de voltar e alterna a classe
-  const backButton = document.querySelector(".voltar");
-  backButton.classList.toggle('dark-tema')
+        // Seleciona o elemento header e alterna a classe
+        const header = document.querySelector('header');
+        header.classList.toggle('dark-tema');
 
-  // Seleciona o elemento p e alterna a classe
-  const p = document.querySelector('p');
-  p.classList.toggle('dark-tema')
+        // Seleciona o elemento footer e alterna a classe
+        const footer = document.querySelector('footer');
+        footer.classList.toggle('dark-tema');
+
+        // Seleciona o parágrafo e alterna a classe
+        const paragrafo = document.querySelectorAll('p');
+        paragrafo.classList.toggle('dark-tema');
+
+        // Seleciona as Redes Sociais
+        const redessociais = document.getElementsByClassName('socialContainer');
+        redessociais.classList.toggle('dark-tema');
+
+        // Seleciona a seta
+        const setavoltar = document.getElementsByClassName('voltar');
+        setavoltar.classList.toggle('dark-tema');
+    });
 });

@@ -11,20 +11,36 @@ if(window.location.href.charAt(window.location.href.search('html')+4)=='?') {
     desc.innerHTML= "Ficamos gratos em poder ajudar com a qualidade do envelhecimento da sua família!"
 }
 
-document.getElementById('toggle-tema').addEventListener('click', function() {
-    // Alterna a classe no body
-    document.body.classList.toggle('dark-tema');
-  
-    // Seleciona o elemento header e alterna a classe 
-    const header = document.querySelector('header');
-    header.classList.toggle('dark-tema');
-  
-    const p = document.querySelector('p');
-    p.classList.toggle('dark-tema')
+// Seleciona todos os checkboxes com a classe 'switch'
+const switches = document.getElementsByClassName('switch');
 
-    const desc = document.querySelector('desc')
-    desc.classList.toggle('dark-tema')
-  });
+// Adiciona um evento de 'change' a cada checkbox
+Array.from(switches).forEach(switchElement => {
+    switchElement.addEventListener('change', function() {
+        // Alterna a classe no body
+        document.body.classList.toggle('dark-tema');
+
+        // Seleciona o elemento header e alterna a classe
+        const header = document.querySelector('header');
+        header.classList.toggle('dark-tema');
+
+        // Seleciona o elemento footer e alterna a classe
+        const footer = document.querySelector('footer');
+        footer.classList.toggle('dark-tema');
+
+        // Seleciona o parágrafo e alterna a classe
+        const paragrafo = document.querySelectorAll('p');
+        paragrafo.classList.toggle('dark-tema');
+
+        // Seleciona as Redes Sociais
+        const redessociais = document.getElementsByClassName('socialContainer');
+        redessociais.classList.toggle('dark-tema');
+
+        // Seleciona o ID Desc e alterna a classe
+        const descricao = document.getElementById('desc');
+        descricao.classList.toggle('dark-tema');
+    });
+});
 
 document.addEventListener('DOMContentLoaded', function() {
     const telefoneInput = document.getElementById('telefone');

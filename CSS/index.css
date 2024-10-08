@@ -357,20 +357,27 @@ table {
   color: black;
 }
 
-p.dark-tema {
-  color: black;
-}
 body.dark-tema .container-imagem {
   background-image: var(--imagem-dark);
 }
 
-p {
-  color: var(--text-color-light);
-}
-p.dark-tema {
-  color: black;
+body.dark-tema .show {
+  background-color:#575757;
 }
 
+body.dark-tema th{
+  background-color: #747474;
+  color: white;
+}
+
+body.dark-tema td{
+  background-color: #747474;
+  color: white;
+}
+
+body.dark-tema #prim th {
+  background-color: #575757;
+}
 
 /*O switch*/ 
 .switch {

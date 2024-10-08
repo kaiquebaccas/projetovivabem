@@ -112,3 +112,59 @@ body.dark-tema {
     background-color: var(--background-color-dark);
     color: var(--text-color-light);
 }
+
+
+/*O switch*/ 
+.switch {
+    margin-left: 10px;
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    height: 25px;
+    width: 100px;
+   }
+   
+   /* Oculta o design comum da checkbox*/
+   .switch input {
+    opacity: 1;
+    width: 0;
+    height: 0;
+   }
+   
+   /* O slider (A bolinha que fica passando de um lado pro outro) */
+   .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background: #e6eeed;
+    transition: .4s;
+    border-radius: 30px;
+    border: 0.01dvh solid #000000;
+   }
+   
+   .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.2em;
+    width: 1.2em;
+    border-radius: 16px;
+    left: 1.2px;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px #999999;
+    transition: .4s;
+   }
+   
+   input:checked + .slider {
+    background-color: #000000;
+    border: 1px solid transparent;
+   }
+   
+   input:checked + .slider:before {
+    transform: translateX(4.1em);
+   }
+   

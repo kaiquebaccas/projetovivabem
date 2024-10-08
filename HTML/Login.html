@@ -13,8 +13,11 @@
     <header class="header">
         <h1><a href="Index.html" class="logo"><img src="../IMG/V sem fundo.png" alt="VivaBem"></a></h1>
         <nav class="nav">       
-            <button id="toggle-tema">Alternar Tema</button>
             <button class="voltar" onclick="history.back()"><img src="../IMG/setagoback.png" alt=""></button>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+              </label>
         </nav>
     </header>
     <section>
@@ -37,7 +40,7 @@
                         </div>
                     </div>
                     <button type="submit">Entrar</button>
-                    <p>Não tem uma conta? <a href="#" id="register-link">Registrar</a></p>
+                    Não tem uma conta? <a href="#" id="register-link">Registrar</a>
                 </form>
 
                 <form id="register-form" style="display: none;">

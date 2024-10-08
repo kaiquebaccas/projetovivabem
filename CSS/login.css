@@ -162,6 +162,16 @@ header.dark-tema {
     background-color: var(--background-header-dark);
 }
 
+p {
+    color: black;
+}
+
+p.dark-tema {
+    color: white;
+}
+
+
+
 /* Erros da validação */
 
 .error-message {
@@ -173,3 +183,21 @@ header.dark-tema {
   input.error {
     border: 2px solid red;
   }
+
+header.dark-tema .voltar {
+    background-color: #747474;
+}
+
+/* variáveis de tema */
+:root {
+    --background-color-light: #ffffff;
+    --text-color-light: #000000;
+    --background-color-dark: #333333;
+    --text-color-dark: #ffffff;
+}
+
+body.dark-tema .container {
+    background-color: #444;
+    border: 1px white;
+    color: white;
+}
