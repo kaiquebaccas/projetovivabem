@@ -79,8 +79,6 @@ Array.from(switches).forEach(switchElement => {
     });
 });
 
-
-
 // espera até que todo o documento seja carregado
 
 document.addEventListener('DOMContentLoaded', ()=>{
