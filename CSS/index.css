@@ -466,16 +466,19 @@ body.dark-tema #prim th {
 .containerOne:hover {
   background-color: #d62976;
   transition-duration: .3s;
+  border-radius: 50% 80% / 70% 10%;
 }
-/* twitter*/
+/* github*/
 .containerTwo:hover {
-  background-color: #00acee;
+  background-color: #000000;
   transition-duration: .3s;
+  border-radius: 50% 80% / 70% 10%;
 }
 /* linkdin*/
 .containerThree:hover {
   background-color: #0072b1;
   transition-duration: .3s;
+  border-radius: 50% 80% / 70% 10%;
 }
 
 .socialSvg {

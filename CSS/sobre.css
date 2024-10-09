@@ -31,16 +31,19 @@ body.dark-tema p {
   .containerOne:hover {
     background-color: #d62976;
     transition-duration: .3s;
+    border-radius: 50% 80% / 70% 10%;
   }
-  /* twitter*/
-  .containerTwo:hover {
-    background-color: #00acee;
+ /* github*/
+.containerTwo:hover {
+    background-color: #000000;
     transition-duration: .3s;
-  }
+    border-radius: 50% 80% / 70% 10%;
+  }  
   /* linkdin*/
   .containerThree:hover {
     background-color: #0072b1;
     transition-duration: .3s;
+    border-radius: 50% 80% / 70% 10%;
   }
   
   .socialSvg {
