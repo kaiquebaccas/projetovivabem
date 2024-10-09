@@ -16,7 +16,7 @@ Array.from(switches).forEach(switchElement => {
         footer.classList.toggle('dark-tema');
 
         // Seleciona o parágrafo e alterna a classe
-        const paragrafo = document.querySelector('p');
+        const paragrafo = document.querySelectorAll('p');
         paragrafo.classList.toggle('dark-tema');
 
         // Seleciona as Redes Sociais

@@ -6,8 +6,52 @@ p.dark-tema {
     color: white;
 }
 
+body.dark-tema p {
+    color:white;
+}
+
 .input-field input, .input-field textarea{
     background-color: #555;
     border-color: #777;
     color: #fff;
 }
+
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: #747474;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+  
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
