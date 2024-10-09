@@ -192,6 +192,12 @@ section.show {
   border-radius: 5px;
 }
 
+body.dark-tema section.show {
+  filter: drop-shadow(1px 1px 10px rgb(32, 32, 32))
+    drop-shadow(-1px -1px 10px rgb(32, 32, 32));
+}
+
+
 section.show.anim:hover {
   width: 60%;
   transition: 200ms;
