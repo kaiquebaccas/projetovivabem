@@ -166,7 +166,7 @@ header.dark-tema {
     background-color: var(--background-header-light);
 }
 
-.voltar.dark-tema {
+body.dark-tema .voltar{
     background-color: var(--background-header-dark);
 }
 

@@ -202,26 +202,6 @@ Array.from(switches).forEach(switchElement => {
     switchElement.addEventListener('change', function() {
         // Alterna a classe no body
         document.body.classList.toggle('dark-tema');
-
-        // Seleciona o elemento header e alterna a classe
-        const header = document.querySelector('header');
-        header.classList.toggle('dark-tema');
-
-        // Seleciona o elemento footer e alterna a classe
-        const footer = document.querySelector('footer');
-        footer.classList.toggle('dark-tema');
-
-        // Seleciona o parágrafo e alterna a classe
-        const paragrafo = document.querySelectorAll('p');
-        paragrafo.classList.toggle('dark-tema');
-
-        // Seleciona as Redes Sociais
-        const redessociais = document.getElementsByClassName('socialContainer');
-        redessociais.classList.toggle('dark-tema');
-
-        // Seleciona a seta
-        const setavoltar = document.getElementsByClassName('voltar');
-        setavoltar.classList.toggle('dark-tema');
     });
 });
 
