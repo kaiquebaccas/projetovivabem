@@ -205,3 +205,103 @@ Array.from(switches).forEach(switchElement => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const loginForm = document.getElementById("login-form");
+    const emailLogin = document.getElementById("emailLogin");
+    const passwordLogin = document.getElementById("passwordLogin");
+    const emailLoginError = document.getElementById("emailLoginError");
+    const passwordLoginError = document.getElementById("passwordLoginError");
+
+    loginForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        // Validação do email
+        if (emailLogin.value === "") {
+            emailLoginError.textContent = "Por favor, insira seu email.";
+        } else {
+            emailLoginError.textContent = "";
+        }
+
+        // Validação da senha
+        if (passwordLogin.value === "") {
+            passwordLoginError.textContent = "Por favor, insira sua senha.";
+        } else {
+            passwordLoginError.textContent = "";
+        }
+
+        // Se ambos os campos forem válidos, verificar os dados de login
+        if (emailLogin.value !== "" && passwordLogin.value !== "") {
+            const users = JSON.parse(localStorage.getItem("users")) || [];
+            const user = users.find(user => user.email === emailLogin.value && user.password === passwordLogin.value);
+
+            if (user) {
+                alert("Login efetuado com sucesso!");
+                // Redirecionar para outra página ou realizar outra ação
+            } else {
+                alert("Email ou senha incorretos.");
+            }
+        }
+    });
+});
+
+function showPasswordL() {
+    const passwordInput = document.getElementById("passwordLogin");
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+    } else {
+        passwordInput.type = "password";
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const registerForm = document.getElementById("register-form");
+    const username = document.getElementById("username");
+    const emailRegister = document.getElementById("emailRegister");
+    const passwordRegister = document.getElementById("passwordRegister");
+    const usernameError = document.getElementById("usernameError");
+    const emailRegisterError = document.getElementById("emailRegisterError");
+    const passwordRegisterError = document.getElementById("passwordRegisterError");
+
+    registerForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        // Validação do nome de usuário
+        if (username.value === "") {
+            usernameError.textContent = "Por favor, insira seu nome de usuário.";
+        } else {
+            usernameError.textContent = "";
+        }
+
+        // Validação do email
+        if (emailRegister.value === "") {
+            emailRegisterError.textContent = "Por favor, insira seu email.";
+        } else {
+            emailRegisterError.textContent = "";
+        }
+
+        // Validação da senha
+        if (passwordRegister.value === "") {
+            passwordRegisterError.textContent = "Por favor, insira sua senha.";
+        } else {
+            passwordRegisterError.textContent = "";
+        }
+
+        // Se todos os campos forem válidos, armazenar os dados no localStorage
+        if (username.value !== "" && emailRegister.value !== "" && passwordRegister.value !== "") {
+            const users = JSON.parse(localStorage.getItem("users")) || [];
+            users.push({ username: username.value, email: emailRegister.value, password: passwordRegister.value });
+            localStorage.setItem("users", JSON.stringify(users));
+            alert("Registro efetuado com sucesso!");
+            // Redirecionar para outra página ou realizar outra ação
+        }
+    });
+});
+
+function showPasswordR() {
+    const passwordInput = document.getElementById("passwordRegister");
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+    } else {
+        passwordInput.type = "password";
+    }
+}
