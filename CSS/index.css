@@ -174,7 +174,7 @@ td {
 }
 
 .textoprop {
-  font-size: 18px;
+  font-size: clamp(12px, 1vw, 16px);
 }
 
 /* Sobre css */
