@@ -168,3 +168,42 @@ var marker = L.marker([-24.008191441703165, -46.43461477726323]).addTo(map) //Cr
     .openPopup(); //Abre o PopUp como padrão
 
 
+    // Aqui vou começar a escrever o código do buscador de endereço através do CEP
+
+    const busca = document.getElementById('buscarEndereco');
+    const cep = document.getElementById('CEP');
+    const lograd = document.getElementById('Logradouro');
+    const bairro = document.getElementById('Bairro');
+    const local = document.getElementById('Cidade');
+    const uf = document.getElementById('Estado');
+    const alerta = document.getElementById('alerta');
+
+
+    busca.addEventListener('click', function(event){ //pega o botao e executa a funçao qnd o botao é apertado
+      event.preventDefault(); //serve para a pagina nao recarregar quando o form for submitado
+      cep.value = cep.value.replace(/\D/g, ""); //isso aqui só tira oque nao for numero, uma mini validação
+
+      if(cep.value){ //se cep tiver algum valor
+        fetch(`https://viacep.com.br/ws/${cep.value}/json/`) //fetch faz request no servidor da API, q no caso é a viacep
+        .then(response => response.json()) //pega a response da request e puxa o json da responde, p vir no formato de obj js
+        .then(end => {
+          if(!end.erro){ //se nao der erro, ele transforma o valor das const dos inputs no valor fornecido pelo servidor
+            lograd.value = end.logradouro;
+            bairro.value = end.bairro;
+            local.value = end.localidade;
+            uf.value = end.uf;
+            alerta.style.display = 'none';
+
+          } else {
+            alerta.style.display = 'block';
+          }
+        }
+        )
+        .catch(error => { //se der erro ao entrar em contato com a API
+          console.error(error);
+        }); 
+      } else { //se cep n tiver valor
+        alerta.style.display = 'block';
+      }
+    });
+

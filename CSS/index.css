@@ -269,6 +269,63 @@ section.show div.imagem.mb {
     display: none;
   }
 }
+
+
+/*CSS da consulta de endereço pelo cep*/
+
+.consultarCep{    
+  background-color: #e6eeed;
+  padding: 30px;
+  border-radius: 5px;
+  filter: drop-shadow(1px 1px 10px rgb(192, 192, 192))
+  drop-shadow(-1px -1px 10px rgb(192, 192, 192));
+  width: 350px
+}
+
+.consulta{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.consulta label{
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+.consulta  input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+button#buscarEndereco{
+    width: 100%;
+    padding: 10px;
+    background-color: #4da0d8;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#buscarEndereco:hover{
+  background-color: #3748a8;
+}
+
+.consulta #alerta{
+  display: none;
+}
+
+
 /*rodapé*/
 footer {
   padding: 1%;
