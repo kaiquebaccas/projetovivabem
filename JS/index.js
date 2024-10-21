@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function startAutoPlay() {
-    autoPlayInterval = setInterval(nextSlide, 3000); // 3 segundos pra mim ta bom
+    autoPlayInterval = setInterval(nextSlide, 3000); // 3 segundos
   }
 
   function stopAutoPlay() {
@@ -67,7 +67,7 @@ Array.from(switches).forEach(switchElement => {
 
 document.addEventListener('DOMContentLoaded', ()=>{
 
-// POP-UP ---------------------------------------------------------------------------------------
+// POP-UP
 const popup = document.getElementById('cookieDialog');
 const novamente = document.getElementById('novamente');
 const fechar = document.getElementById('fechar');
