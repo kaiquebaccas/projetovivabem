@@ -388,6 +388,7 @@ button#buscarEndereco:hover{
   cursor: pointer;
   transform-style: preserve-3d;
   transition: .5s;
+  cursor: default;
 }
 
 .planost .card img.assinatura{
