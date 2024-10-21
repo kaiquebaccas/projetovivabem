@@ -271,6 +271,24 @@ section.show div.imagem.mb {
 }
 
 
+button.calculo{
+  width: 550px;
+  height: 60px;
+  padding: 10px;
+  background-color: #4da0d8;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.calculo:hover{
+  background-color: #3748a8;
+}
+
+
 /*CSS da consulta de endereço pelo cep*/
 
 .consultarCep{    
@@ -282,11 +300,17 @@ section.show div.imagem.mb {
   width: 350px
 }
 
+.containerConsulta{
+  display: flex;
+  justify-content: center;
+}
+
 .consulta{
   display: flex;
   justify-content: center;
   margin: 0;
   margin-bottom: 30px;
+  margin-left: 50px;
 }
 
 .consulta label{
@@ -350,7 +374,7 @@ button#buscarEndereco:hover{
 }
 
 .planost .card h2{
-  color: #fff;
+  color: #3b3838;
   transform-style: preserve-3d;
 }
 
