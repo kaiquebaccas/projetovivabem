@@ -496,7 +496,7 @@ body.dark-tema {
 }
 
 footer {
-  background-color: var(--background-color-light);
+  background-color: var(--background-header-light);
   color: var(--text-color-light);
 }
 
@@ -622,12 +622,16 @@ body.dark-tema #prim th {
 .socialContainer {
   width: 52px;
   height: 52px;
-  background-color: #747474;
+  background-color: #e6eeed;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   transition-duration: .3s;
+}
+
+.dark-tema .socialContainer {
+  background-color: #747474;
 }
 
 /* instagram*/
@@ -649,11 +653,30 @@ body.dark-tema #prim th {
   border-radius: 50% 80% / 70% 10%;
 }
 
+.containerOne:hover .socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+
+.containerTwo:hover .socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+
+.containerThree:hover .socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+
 .socialSvg {
   width: 17px;
 }
 
 .socialSvg path {
+  fill: rgb(0, 0, 0);
+}
+
+.dark-tema .socialSvg path {
   fill: rgb(255, 255, 255);
 }
 

@@ -17,44 +17,66 @@ body.dark-tema p {
 }
 
 .socialContainer {
-    width: 52px;
-    height: 52px;
-    background-color: #747474;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    transition-duration: .3s;
-  }
-  
-  /* instagram*/
-  .containerOne:hover {
-    background-color: #d62976;
-    transition-duration: .3s;
-    border-radius: 50% 80% / 70% 10%;
-  }
- /* github*/
+  width: 52px;
+  height: 52px;
+  background-color: #e6eeed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+.dark-tema .socialContainer {
+  background-color: #747474;
+}
+
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+  border-radius: 50% 80% / 70% 10%;
+}
+/* github*/
 .containerTwo:hover {
-    background-color: #000000;
-    transition-duration: .3s;
-    border-radius: 50% 80% / 70% 10%;
-  }  
-  /* linkdin*/
-  .containerThree:hover {
-    background-color: #0072b1;
-    transition-duration: .3s;
-    border-radius: 50% 80% / 70% 10%;
-  }
-  
-  .socialSvg {
-    width: 17px;
-  }
-  
-  .socialSvg path {
-    fill: rgb(255, 255, 255);
-  }
-  
-  .socialContainer:hover .socialSvg {
-    animation: slide-in-top 0.3s both;
-  }
-  
+  background-color: #000000;
+  transition-duration: .3s;
+  border-radius: 50% 80% / 70% 10%;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+  border-radius: 50% 80% / 70% 10%;
+}
+
+.containerOne:hover .socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+
+.containerTwo:hover .socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+
+.containerThree:hover .socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(0, 0, 0);
+}
+
+.dark-tema .socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
