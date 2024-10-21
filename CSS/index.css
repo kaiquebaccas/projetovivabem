@@ -292,7 +292,7 @@ footer {
   display: flex;
   gap: 10px;
   padding-top: 5%;
-  margin-right: -165%; /*posicionamento das redes socias*/
+  margin-right: -55vw; /*posicionamento das redes socias*/
 }
 #redes li {
   display: inline;
