@@ -177,6 +177,7 @@ var marker = L.marker([-24.008191441703165, -46.43461477726323]).addTo(map) //Cr
     const local = document.getElementById('Cidade');
     const uf = document.getElementById('Estado');
     const alerta = document.getElementById('alerta');
+    const card = document.getElementsByClassName('consultarCep');
 
 
     busca.addEventListener('click', function(event){ //pega o botao e executa a funçao qnd o botao é apertado
@@ -192,7 +193,12 @@ var marker = L.marker([-24.008191441703165, -46.43461477726323]).addTo(map) //Cr
             bairro.value = end.bairro;
             local.value = end.localidade;
             uf.value = end.uf;
-            alerta.style.display = 'none';
+
+            //os outros inputs se habilitam para o caso do user precisar editar alguma informação
+            lograd.disabled = false; 
+            bairro.disabled = false; 
+            local.disabled = false; 
+            uf.disabled = false; 
 
           } else {
             alerta.style.display = 'block';
