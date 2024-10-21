@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="../JS/index.js" defer></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head> 
 <body>
     <header class="header">
@@ -79,31 +80,28 @@
                 <button onclick="location.href='formulario.html'" type="button">Agendar Consulta</button> 
             </div>
         </section>
-        <div class="spacer"></div>
-            <section class="planos">
                 <h2>Nossos planos</h2>
-                <table>
-                    <tr id="prim">
-                        <th>Plano</th>
-                        <th>Valor</th>
-                    </tr>
-                    <tr>
-                        <th>Mensal</th>
-                        <td>R$300</td>
-                    </tr>
-                    <tr>
-                        <th>Trimestral</th>
-                        <td>R$810</td>
-                    </tr>
-                    <tr>
-                        <th>Anual</th>
-                        <td>R$2.880</td>
-                    </tr>
-                </table>
-            </section>
+                <div class="planost">
+                    <div class="card card1">
+                        <h2>PLANO RELOGIO</h2>
+                        <img src="/IMG/plano1img.png" alt="" class="assinatura">
+                        <button>Comprar</button>
+                    </div>
 
-        <div class="spacer"></div>
+                    <div class="card card2">
+                        <h2>PLANO AMPULHETA</h2>
+                        <img src="/IMG/plan2maca.png" alt="" class="assinatura">
+                        <button>Comprar</button>
+                    </div>
 </div>
+<script>      
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.8
+  });
+  </script>
 <div id="map"></div>
 
         <section class="consulta">
@@ -130,8 +128,6 @@
             </form>
         </section>
 
-
-
 <footer>
     <div id="rodape">
         <a href="index.html"><img id="rodapeimg" src="../IMG/V sem fundo.png"></a>
@@ -150,7 +146,7 @@
         </ul>
     </div>
 </footer>
-</div>  
+</div> 
 </body>
 
 </html>

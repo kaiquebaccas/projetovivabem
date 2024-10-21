@@ -325,6 +325,64 @@ button#buscarEndereco:hover{
   display: none;
 }
 
+/*css planos card*/
+.planost{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+}
+
+.planost .card{
+  width: 300px;
+  height: 450px;
+  padding: 20px;
+  margin: 40px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #e6eeed;
+  transform-style: preserve-3d;
+}
+
+.planost .card h2{
+  color: #fff;
+  transform-style: preserve-3d;
+}
+
+.planost .card button{
+  padding: 10px 40px;
+  background-color: #00b938;
+  border: 0;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: .5s;
+}
+
+.planost .card img.assinatura{
+  max-width: 250px;
+  transform-style: preserve-3d;
+  transition: .5s;
+}
+
+.planost .card:hover img.assinatura, .planost .card:hover button{
+  transform: translate3d(0,0,100px);
+}
+
+.planost div.card1{
+  background-image: linear-gradient(45deg, #e6eede #4da0d8);
+}
+
+.planost div.card2{
+  background-image: linear-gradient(45deg, #4da0d8 #e6eede);
+}
 
 /*rodapé*/
 footer {
