@@ -78,8 +78,8 @@ div.spacer.L {
 }
 
 dialog {
-  width: 90%;
-  height: 28%;
+  width: 80%;
+  height: 33%;
   border-radius: 25px;
   background-color: #e6eeed;
   text-align: left;
@@ -87,7 +87,7 @@ dialog {
   flex-direction: column;
   align-items: left;
   font-size: 22px;
-  bottom: -600px;
+  bottom: -450px;
 }
 
 #cookieDialog img {
