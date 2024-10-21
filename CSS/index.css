@@ -300,6 +300,21 @@ button.calculo:hover{
   width: 350px
 }
 
+.dark-tema .consultarCep{
+  background-color: #333333;
+  color: #fff;
+  filter: drop-shadow(1px 1px 10px rgb(24, 17, 17))
+  drop-shadow(-1px -1px 10px rgb(8, 6, 6));
+}
+
+.dark-tema button#buscarEndereco{
+    background-color: #3748a8;
+}
+
+.dark-tema button#buscarEndereco:hover{
+  background-color: #7786db;
+}
+
 .containerConsulta{
   display: flex;
   justify-content: center;
@@ -372,6 +387,7 @@ button#buscarEndereco:hover{
   background-color: #e6eeed;
   transform-style: preserve-3d;
 }
+
 
 .planost .card h2{
   color: #3b3838;
