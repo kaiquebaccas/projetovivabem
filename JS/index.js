@@ -213,3 +213,19 @@ var marcador = L.marker([-24.008191441703165, -46.43461477726323]).addTo(map) //
       }
     });
 
+
+
+const xArray = ["60-69", "70-79", "80-89", "90-99"];
+const yArray = [11, 2, 20, 4];
+
+const data = [{
+  x:xArray,
+  y:yArray,
+  type:"bar",
+  orientation:"v",
+  marker: {color:"rgba(0,0,255,0.6)"}
+}];
+
+const layout = {title:"Faixa Etária dos Residentes"};
+
+Plotly.newPlot("grafico", data, layout);
