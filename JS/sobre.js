@@ -24,6 +24,46 @@ Array.from(switches).forEach((switchElement) => {
 
     /* Armazena o estado atual no localStorage - (Kaique)
     O valor armazenado será 'true' se a classe 'dark-tema' estiver presente, caso contrário, será 'false' */
-    localStorage.setItem("modoEscuro", document.body.classList.contains("dark-tema"));
+    localStorage.setItem(
+      "modoEscuro",
+      document.body.classList.contains("dark-tema")
+    );
   });
 });
+
+/*
+GRÁFICO: Gênero dos residentes
+*/
+
+const dadosGenero = {
+  labels: ['Masculino', 'Feminino', 'Não Binário'], // rótulos do gráfico
+  datasets: [{
+    label: 'Residentes:',
+    data: [10, 24, 3], // dados: [masculino, feminino, não binário]
+    backgroundColor: ['#4A90E2', '#E94A84', '#50C878'], // cores para as categorias
+    hoverOffset: 4 // deslocamento ao passar o mouse por cima das "fatias"
+  }]
+};
+
+const configGenero = {
+  type: 'pie', // tipo do gráfico: torta (grafico de setores, tradicionalmente chamado de gráfico de pizza)
+  data: dadosGenero,
+  options: {
+    responsive: true, // torna o gráfico responsivo
+    plugins: {
+      legend: {
+        position: 'top', // posiciona a legenda no topo
+      },
+      title: {
+        display: true, // mostra o título
+        text: 'Distribuição de Gênero dos Residentes',
+        font: {
+          size: 20
+        }
+      }
+    }
+  }
+};
+
+const contextoCanvas = document.getElementById('graficoGenero').getContext('2d'); // seleciona o canvas 
+const graficoGenero = new Chart(contextoCanvas, configGenero); // cria o gráfico
