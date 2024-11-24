@@ -67,3 +67,27 @@ const configGenero = {
 
 const contextoCanvas = document.getElementById('graficoGenero').getContext('2d'); // seleciona o canvas 
 const graficoGenero = new Chart(contextoCanvas, configGenero); // cria o gráfico
+
+// grafico atividades --------------------- kaua li malao
+
+  google.charts.load('current',{packages:['corechart']}); // carrega a versao atual (current) e os graficos (corechart)
+  google.charts.setOnLoadCallback(drawChart); // funcao callback, quando a biblioteca for carregada, tal funcao (no caso a "grafico") é executada
+
+  function drawChart(){ // funcao que cria o grafico
+    const data = google.visualization.arrayToDataTable([ //pega uma array e tranforma em dados do grafico
+      ['Residentes', 'Atividade favorita'],
+      ['Yoga', 12],
+      ['Cardio', 13],
+      ['Musica', 6],
+      ['Pintura', 6]
+    ]); //pega uma array e tranforma em dados do grafico
+
+    const options = {
+      title: 'Atividades favoritas dos residentes'
+    };
+
+    const construirGrafico = new google.visualization.BarChart(document.getElementById('atividade')); //desenha o grafico
+
+    construirGrafico.draw(data, options)
+  };
+

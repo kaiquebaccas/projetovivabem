@@ -80,3 +80,13 @@ body.dark-tema p {
 .socialContainer:hover .socialSvg {
   animation: slide-in-top 0.3s both;
 }
+
+.graficos{
+  display: flex;
+  justify-content: center;
+}
+
+#atividade {
+  width: 500px;
+  margin: 0 auto;
+}
