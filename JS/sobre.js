@@ -90,4 +90,39 @@ const graficoGenero = new Chart(contextoCanvas, configGenero); // cria o gráfic
 
     construirGrafico.draw(data, options)
   };
+// grafico regiões - olavio
+  // Define os rótulos para as fatias do gráfico (as regiões do Brasil).(Olavio)
+const xValues = ["Norte", "Sudeste", "Sul", "Centro-Oeste", "Nordeste"];
 
+// Define os valores associados a cada região, que serão representados no gráfico.(Olavio)
+const yValues = [9, 11, 5, 7, 5];
+
+// Define as cores de preenchimento para cada fatia do gráfico.(Olavio)
+const barColors = [
+  "#b91d47", 
+  "#00aba9", 
+  "#2b5797", 
+  "#006400", 
+  "#A0522D"  
+];
+
+// Cria um novo gráfico utilizando a biblioteca Chart.js.(Olavio)
+new Chart("myChart", {
+  type: "doughnut", // Especifica o tipo de gráfico (gráfico de rosca).(Olavio)
+  data: {
+    // Define os rótulos (as regiões) que aparecerão no gráfico.(Olavio)
+    labels: xValues,
+    // Define os dados do gráfico, incluindo as cores e os valores das fatias.(Olavio)
+    datasets: [{
+      backgroundColor: barColors, // Associa as cores às fatias do gráfico.(Olavio)
+      data: yValues // Associa os valores numéricos às fatias do gráfico.(Olavio)
+    }]
+  },
+  options: {
+    // Configurações adicionais do gráfico.(Olavio)
+    title: {
+      display: true, // Exibe o título do gráfico.(Olavio)
+      text: "Regiões dos Residentes:" // Texto do título que será exibido acima do gráfico.(Olavio)
+    }
+  }
+});
