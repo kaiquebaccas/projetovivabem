@@ -12,6 +12,8 @@
     <script src="../JS/index.js" defer></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head> 
 <body>
     <header class="header">
@@ -101,8 +103,35 @@
 
 </div>
 
+<div id="graficoAssinatura">
+    <h2>Número de assinaturas mensais</h2>
+    <canvas id="graficoTeles" style="width:100%;max-width:1000px"></canvas>
+    <script>
+        const xValues = [500,570,700,720,777,820,850,930,1000,1005,1190];
+        const yValues = [1,2,3,4,5,6,7,8,9,10,11,12];
+        
+        new Chart("graficoTeles", {
+          type: "line",
+          data: {
+            labels: xValues,
+            datasets: [{
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "rgba(0,0,255,1.0)",
+              borderColor: "rgba(0,0,255,0.1)",
+              data: yValues
+            }]
+          },
+          options: {
+            legend: {display: false},
+            scales: {
+              yAxes: [{ticks: {min: 1, max:12}}],
+            }
+          }
+        });
+        </script>
+</div>
 
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 <div class="calcular">
     <button class="calculo" onclick="location.href='calculo.html'">Calcular preço com base no gasto mensal</button>

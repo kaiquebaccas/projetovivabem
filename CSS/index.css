@@ -151,6 +151,13 @@ td {
 .planos * {
   overflow: hidden;
 }
+#graficoAssinatura{
+  align-items: center;
+  justify-content: center;
+}
+.calcular {
+  display: none;
+}
 table {
   font-family: arial;
   font-weight: 700;
